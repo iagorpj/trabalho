@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid - Meu Site</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(125deg, #213869, #D4AF37, #7c2323);
+            color: #222;
+        }
+
+        /* CONTAINER PRINCIPAL */
+        .site {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            border: 2px solid #222;
+            background-color: white;
+        }
+
+        /* CABEÇALHO */
+        header {
+            height: 90px;
+            background-color: #071952;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 30px;
+            border-bottom: 2px solid #222;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        header img {
+            width: 70px;
+            height: 91px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* ÁREA DOS CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            padding: 30px;
+        }
+
+        /* CARD */
+        .card {
+            border: 2px solid #222;
+            padding: 12px;
+            background-color: #fff;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 4px 4px 0px #071952;
+        }
+
+        /* IMAGEM DO CARD */
+        .card-img {
+            height: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #555;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background: transparent;
+        }
+
+        .azul {
+            background-color: #dce7ff;
+        }
+
+        .dourado {
+            background-color: #fff0c2;
+        }
+
+        .cinza {
+            background-color: #eeeeee;
+        }
+
+        .roxo {
+            background-color: #e7ddff;
+        }
+
+        .azul-claro {
+            background-color: #d9f3ff;
+        }
+
+        .rosa {
+            background-color: #ffe0eb;
+        }
+
+        .card h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: #071952;
+        }
+
+        .card p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #444;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 7px 12px;
+            background-color: #071952;
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .botao:hover {
+            background-color: #c9a227;
+        }
+
+        /* RODAPÉ */
+        footer {
+            height: 55px;
+            background-color: #071952;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-top: 2px solid #222;
+            font-size: 14px;
+        }
+
+        /* RESPONSIVIDADE */
+        @media (max-width: 700px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                height: auto;
+                padding: 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="site">
+
+        <!-- CABEÇALHO -->
+        <header>
+            <img src="Emblema do Real Madrid.jpeg" alt="Emblema do Real Madrid">
+            <h1>Real Madrid</h1>
+
+            <nav>
+                <a href="Página Principal.html">Início</a>
+                <a href="equipe.html">Equipe</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </header>
+
+
+        <!-- CARDS -->
+        <main class="cards">
+
+            <!-- CARD 1 -->
+            <section class="card">
+                <div class="card-img azul">
+                    <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=400&q=80" alt="Real Madrid">
+                </div>
+                <h2>Real Madrid</h2>
+                <p>Conheça um dos clubes mais conhecidos do futebol mundial e sua história.</p>
+                <a href="#" class="botao">Saiba mais</a>
+            </section>
+
+            <!-- CARD 2 -->
+            <section class="card">
+                <div class="card-img dourado">
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=400&q=80" alt="Títulos">
+                </div>
+                <h2>Títulos</h2>
+                <p>Confira alguns dos principais títulos e conquistas do Real Madrid ao longo de sua história.</p>
+                <a href="#" class="botao">Ver títulos</a>
+            </section>
+
+            <!-- CARD 3 -->
+            <section class="card">
+                <div class="card-img cinza">
+                    <img src="https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=400&q=80" alt="Elenco">
+                </div>
+                <h2>Elenco</h2>
+                <p>Veja informações sobre os jogadores que fazem parte do elenco do clube.</p>
+                <a href="#" class="botao">Ver elenco</a>
+            </section>
+
+            <!-- CARD 4 -->
+            <section class="card">
+                <div class="card-img roxo">
+                    <img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?auto=format&fit=crop&w=400&q=80" alt="Estádio">
+                </div>
+                <h2>Estádio</h2>
+                <p>Conheça o Santiago Bernabéu, casa do Real Madrid e um dos estádios mais famosos do futebol.</p>
+                <a href="#" class="botao">Conhecer</a>
+            </section>
+
+            <!-- CARD 5 -->
+            <section class="card">
+                <div class="card-img azul-claro">
+                    <img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?auto=format&fit=crop&w=400&q=80" alt="Jogos">
+                </div>
+                <h2>Jogos</h2>
+                <p>Acompanhe os próximos jogos e as principais competições disputadas pelo clube.</p>
+                <a href="#" class="botao">Ver jogos</a>
+            </section>
+
+            <!-- CARD 6 -->
+            <section class="card">
+                <div class="card-img rosa">
+                    <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=400&q=80" alt="Ídolos">
+                </div>
+                <h2>Ídolos</h2>
+                <p>Relembre grandes jogadores que marcaram a história do Real Madrid.</p>
+                <a href="#" class="botao">Ver ídolos</a>
+            </section>
+
+        </main>
+
+
+        <!-- RODAPÉ -->
+        <footer>
+            © 2026 - Real Madrid Fan Site
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

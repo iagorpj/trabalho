@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Desenvolvedores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between">
+
+    <!-- Navegação / Cabeçalho -->
+    <header class="bg-slate-950 border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="Página Principal.html" class="flex items-center space-x-3">
+                <span class="bg-blue-600 text-white font-bold px-3 py-1.5 rounded-lg text-sm tracking-wider">RM</span>
+                <span class="font-semibold text-lg tracking-wide">Portal Real Madrid</span>
+            </a>
+            <a href="equipe.html" class="inline-flex items-center space-x-2 text-sm text-slate-300 bg-slate-900 hover:bg-slate-800 border border-slate-700 px-4 py-2 rounded-lg transition-colors">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Voltar à Equipe</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="max-w-4xl mx-auto px-6 py-12 flex-grow w-full">
+        <div class="text-center max-w-xl mx-auto mb-10">
+            <h1 class="text-3xl font-bold tracking-tight text-white mb-3">Fale Conosco</h1>
+            <p class="text-slate-400 text-sm">
+                Entre em contato direto com os desenvolvedores do projeto. Preencha o formulário ou utilize os canais diretos abaixo.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Informações de Contato Direto -->
+            <div class="md:col-span-1 space-y-4">
+                <div class="bg-slate-950 border border-slate-800 rounded-xl p-5">
+                    <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Canais Diretos</h3>
+                    
+                    <div class="space-y-4 text-xs">
+                        <div>
+                            <span class="text-blue-400 font-semibold block mb-1">Iago</span>
+                            <p class="text-slate-300 flex items-center space-x-2 mb-1"><i class="fa-solid fa-envelope w-4 text-slate-500"></i><span>iago.dev@portalrm.com</span></p>
+                            <p class="text-slate-300 flex items-center space-x-2"><i class="fa-solid fa-phone w-4 text-slate-500"></i><span>(11) 98765-1111</span></p>
+                        </div>
+                        <hr class="border-slate-800">
+                        <div>
+                            <span class="text-blue-400 font-semibold block mb-1">Otavio</span>
+                            <p class="text-slate-300 flex items-center space-x-2 mb-1"><i class="fa-solid fa-envelope w-4 text-slate-500"></i><span>otavio.dev@portalrm.com</span></p>
+                            <p class="text-slate-300 flex items-center space-x-2"><i class="fa-solid fa-phone w-4 text-slate-500"></i><span>(11) 98765-2222</span></p>
+                        </div>
+                        <hr class="border-slate-800">
+                        <div>
+                            <span class="text-blue-400 font-semibold block mb-1">Ryan</span>
+                            <p class="text-slate-300 flex items-center space-x-2 mb-1"><i class="fa-solid fa-envelope w-4 text-slate-500"></i><span>ryan.dev@portalrm.com</span></p>
+                            <p class="text-slate-300 flex items-center space-x-2"><i class="fa-solid fa-phone w-4 text-slate-500"></i><span>(11) 98765-3333</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulário de Mensagem -->
+            <div class="md:col-span-2">
+                <div class="bg-slate-950 border border-slate-800 rounded-xl p-6 sm:p-8">
+                    <h3 class="text-lg font-bold text-white mb-6">Envie sua mensagem</h3>
+                    
+                    <form onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Escolha o destinatário</label>
+                            <select id="destinatario" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-200 focus:outline-none focus:border-blue-500">
+                                <option value="geral">Equipe Completa (Iago, Otavio e Ryan)</option>
+                                <option value="iago">Iago (Front-end & Lógica)</option>
+                                <option value="otavio">Otavio (Estilização & UI)</option>
+                                <option value="ryan">Ryan (Integração & Fluxo)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Seu Nome</label>
+                            <input type="text" required placeholder="Digite seu nome" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-200 focus:outline-none focus:border-blue-500">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Seu E-mail</label>
+                            <input type="email" required placeholder="seu@email.com" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-200 focus:outline-none focus:border-blue-500">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Mensagem</label>
+                            <textarea rows="4" required placeholder="Escreva sua mensagem..." class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-200 focus:outline-none focus:border-blue-500"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-medium py-2.5 px-4 rounded-lg text-sm transition-colors">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-slate-950 border-t border-slate-800 mt-16 py-6 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Portal Real Madrid. Desenvolvido por Iago, Otavio e Ryan.</p>
+    </footer>
+
+    <!-- Script para capturar o parâmetro da URL -->
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const dev = urlParams.get('dev');
+        if (dev && document.getElementById('destinatario')) {
+            document.getElementById('destinatario').value = dev;
+        }
+    </script>
+</body>
+</html>

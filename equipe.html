@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos - Desenvolvedores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between">
+
+    <!-- Navegação / Cabeçalho -->
+    <header class="bg-slate-950 border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="Página Principal.html" class="flex items-center space-x-3">
+                <span class="bg-blue-600 text-white font-bold px-3 py-1.5 rounded-lg text-sm tracking-wider">RM</span>
+                <span class="font-semibold text-lg tracking-wide">Portal Real Madrid</span>
+            </a>
+            <a href="Página Principal.html" class="inline-flex items-center space-x-2 text-sm text-slate-300 bg-slate-900 hover:bg-slate-800 border border-slate-700 px-4 py-2 rounded-lg transition-colors">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Voltar ao Início</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="max-w-6xl mx-auto px-6 py-12 flex-grow w-full">
+        <!-- Título da Seção -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">Equipe de Desenvolvimento</h1>
+            <p class="text-slate-400 text-base">
+                Conheça os responsáveis por criar, estruturar e dar vida a este projeto dedicado ao maior clube do mundo.
+            </p>
+        </div>
+
+        <!-- Cards dos Desenvolvedores -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Iago -->
+            <div class="bg-slate-950 border border-slate-800 rounded-xl p-6 flex flex-col justify-between hover:border-blue-500/50 transition-all duration-300">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-blue-400 bg-blue-950/60 px-3 py-1 rounded-full border border-blue-900">Desenvolvedor</span>
+                        <i class="fa-solid fa-code text-slate-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Iago</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Responsável pela arquitetura estrutural das páginas, organização de conteúdos e implementação das diretrizes de design e usabilidade.
+                    </p>
+                </div>
+                <div>
+                    <!-- Botão para abrir a página de contato -->
+                    <a href="contato.html?dev=iago" class="w-full mb-4 inline-flex items-center justify-center space-x-2 bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Entrar em Contato</span>
+                    </a>
+                    <div class="pt-4 border-t border-slate-900 flex items-center justify-between text-xs text-slate-500">
+                        <span>Front-end & Lógica</span>
+                        <i class="fa-brands fa-html5 text-slate-400 text-base"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Otavio -->
+            <div class="bg-slate-950 border border-slate-800 rounded-xl p-6 flex flex-col justify-between hover:border-blue-500/50 transition-all duration-300">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-blue-400 bg-blue-950/60 px-3 py-1 rounded-full border border-blue-900">Desenvolvedor</span>
+                        <i class="fa-solid fa-laptop-code text-slate-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Otavio</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Atuou na estilização visual, integração de componentes de interface e refinamento dos detalhes estéticos para uma experiência fluida.
+                    </p>
+                </div>
+                <div>
+                    <!-- Botão para abrir a página de contato -->
+                    <a href="contato.html?dev=otavio" class="w-full mb-4 inline-flex items-center justify-center space-x-2 bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Entrar em Contato</span>
+                    </a>
+                    <div class="pt-4 border-t border-slate-900 flex items-center justify-between text-xs text-slate-500">
+                        <span>Estilização & UI</span>
+                        <i class="fa-brands fa-css3-alt text-slate-400 text-base"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ryan -->
+            <div class="bg-slate-950 border border-slate-800 rounded-xl p-6 flex flex-col justify-between hover:border-blue-500/50 transition-all duration-300">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-blue-400 bg-blue-950/60 px-3 py-1 rounded-full border border-blue-900">Desenvolvedor</span>
+                        <i class="fa-solid fa-terminal text-slate-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Ryan</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Focado na otimização de conteúdo, validação de fluxo de navegação entre páginas e garantia de responsividade em diferentes dispositivos.
+                    </p>
+                </div>
+                <div>
+                    <!-- Botão para abrir a página de contato -->
+                    <a href="contato.html?dev=ryan" class="w-full mb-4 inline-flex items-center justify-center space-x-2 bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition-colors">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Entrar em Contato</span>
+                    </a>
+                    <div class="pt-4 border-t border-slate-900 flex items-center justify-between text-xs text-slate-500">
+                        <span>Integração & Fluxo</span>
+                        <i class="fa-solid fa-layer-group text-slate-400 text-base"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-slate-950 border-t border-slate-800 mt-16 py-6 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Portal Real Madrid. Desenvolvido por Iago, Otavio e Ryan.</p>
+    </footer>
+
+</body>
+</html>
